@@ -38,37 +38,38 @@
             <tbody>
                 <tr class="table-dark">
                     <th scope="row">Critère 1</th>
-                    <td><?= intval($review->questions[0]->mark) ?></td>
-                    <td>1</td>
-                    <td></td>
-                    <td></td>
+                    <td><?= $test1 ?></td>
+                    <td><?= $oral1 ?></td>
+                    <td><?= $m1 ?></td>
+                    <td><?= $debrief1 ?></td>
                 </tr>
                 <tr class="table-dark">
                     <th scope="row">Critère 2</th>
-                    <td><?= intval($review->questions[1]->mark) ?></td>
-                    <td>0</td>
-                    <td></td>
-                    <td></td>
+                    <td><?= $test2 ?></td>
+                    <td><?= $oral2 ?></td>
+                    <td><?= $m2 ?></td>
+                    <td><?= $debrief2 ?></td>
                 </tr>
                 <tr class="table-dark">
                     <th scope="row">Critère 3</th>
-                    <td><?= intval($review->questions[2]->mark) ?></td>
-                    <td>1</td>
-                    <td></td>
-                    <td></td>
+                    <td><?= $test3 ?></td>
+                    <td><?= $oral3 ?></td>
+                    <td><?= $m3 ?></td>
+                    <td><?= $debrief3 ?></td>
                 </tr>
                 <tr class="table-dark">
                     <th scope="row">Critère 4</th>
-                    <td><?= intval($review->questions[3]->mark) ?></td>
-                    <td>0</td>
-                    <td></td>
-                    <td></td>
+                    <td><?= $test4 ?></td>
+                    <td><?= $oral4 ?></td>
+                    <td><?= $m4 ?></td>
+                    <td><?= $debrief4 ?></td>
                 </tr>
             </tbody>
         </table>
         <div class="row">
-            <h2 class="display-3">Ajouter les notes de l'examen oral</h2>
+
             <div class="col-12">
+                <h2 class="display-3">Ajouter les notes de l'examen oral</h2>
                 <form action="" method="post" class="form-group ">
                     <label for="addNote1">Critère 1</label>
                     <input class="form-control" type="number" name="addNote1" id="" value="0" max="1" min="0">
@@ -81,6 +82,7 @@
 
                     <label for="addNote4">Critère 4</label>
                     <input class="form-control" type="number" name="addNote4" id="" value="0" max="1" min="0">
+                    <button type="submit" class="btn btn-primary mt-4">Envoyer les notes</button>
                 </form>
             </div>
         </div>
