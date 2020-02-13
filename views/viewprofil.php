@@ -1,5 +1,12 @@
+<?php session_start() ?>
 <?php require('../template/header.php') ?>
+<?php include('../template/navbar.php') ?>
 <?php require('../utils/studentProfil.php') ?>
+<?php
+if(!isset($_SESSION['access'])){ 
+    header("Location: http://localhost/alaji-prototype/views/");
+}
+?>
 <div class="container">
     <div class="jumbotron mt-5">
         <div class="row">
